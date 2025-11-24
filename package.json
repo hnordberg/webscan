@@ -1,0 +1,26 @@
+{
+  "name": "webscan",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Henrik Nordberg",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env node ./index.js",
+    "startDev": "lsof -ti:10020 | xargs kill && cross-env NODE_ENV=local nodemon ./index.js",
+    "startDevNoExp": "cross-env NODE_ENV=local nodemon ./index.js",
+    "startDevDebugExpress": "cross-env NODE_ENV=local DEBUG=express:* nodemon ./index.js"
+  },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "config": "3.3.12",
+    "express": "4.21.2",
+    "js-yaml": "4.1.1",
+    "log4js": "6.9.1",
+    "node-notifier": "10.0.1",
+    "nodemailer": "^7.0.10",
+    "request-promise": "^0.0.1"
+  }
+}
