@@ -1,0 +1,39 @@
+server:
+    log_level: info
+    log_dir: ./logs
+    cert_dir: resources
+    passphrase: changeit
+
+general:
+    numberOfProductsToRemember: 200
+
+email:
+    service: 'gmail'
+    host: 'smtp.gmail.com'
+    port: 465
+    secure: true
+    auth: {
+        clientId: '',
+        clientSecret: '',
+        accessToken: '',
+        refreshToken: ''
+    }
+    to: '<enter your email here>'
+    subject: 'webscan: '
+
+sites: [
+    {
+    name: 'Bitters & Bottles',
+    uri: 'https://www.bittersandbottles.com/collections/scotch-malt?sort_by=created-descending',
+    selector: '.productitem--title',
+    intervalInSeconds: 200
+    },
+    {
+    disabled: true,
+    name: 'Bottle Republic',
+    uri: 'https://www.bottlerepublic.com/search?searchTerm=springbank',
+    selector: '.card__product-name',
+    intervalInSeconds: 200,
+    printRawHtml: true
+    }
+]
