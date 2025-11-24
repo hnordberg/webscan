@@ -80,7 +80,7 @@ sites:
   - name: 'Site Name'
     uri: 'https://example.com/products'
     selector: '.product-title'  # CSS selector for product elements
-    intervalInSeconds: 200      # Scan interval in seconds
+    intervalInSeconds: 300      # Scan interval in seconds, be nice!
     disabled: false             # Set to true to disable scanning
     filterOut: ['Sold Out']     # Optional: exclude products containing these strings
     includeOnly: ['Keyword']    # Optional: only include products containing these strings

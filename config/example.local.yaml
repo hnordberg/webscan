@@ -26,14 +26,14 @@ sites: [
     name: 'Bitters & Bottles',
     uri: 'https://www.bittersandbottles.com/collections/scotch-malt?sort_by=created-descending',
     selector: '.productitem--title',
-    intervalInSeconds: 200
+    intervalInSeconds: 300
     },
     {
     disabled: true,
     name: 'Bottle Republic',
     uri: 'https://www.bottlerepublic.com/search?searchTerm=springbank',
     selector: '.card__product-name',
-    intervalInSeconds: 200,
+    intervalInSeconds: 300,
     printRawHtml: true
     }
 ]
