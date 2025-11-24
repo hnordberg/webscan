@@ -46,3 +46,4 @@ coverage/
 # Optional eslint cache
 .eslintcache
 
+config/local.yaml
