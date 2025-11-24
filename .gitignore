@@ -47,3 +47,5 @@ coverage/
 .eslintcache
 
 config/local.yaml
+resources/cert.pem
+resources/key.pem
