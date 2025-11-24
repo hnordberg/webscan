@@ -49,3 +49,4 @@ coverage/
 config/local.yaml
 resources/cert.pem
 resources/key.pem
+resources/ca-cert.cert
