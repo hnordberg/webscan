@@ -106,7 +106,7 @@ const include = (prod, includeOnly) => {
 const process = (site, html) => {
     let items = html(site.selector);
     if(site.printRawHtml)
-        log.api.debug(`Bottle Republic RAW:\n\n` + items + '\n\n');
+        log.api.debug(`RAW:\n\n` + items + '\n\n');
     let h = `Found ${items.length} products at ${site.name}: \n`, s = '';
 
     let newProducts = [];
